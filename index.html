@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to libby</title>
+</head>
+<body>
+    <!-- Main content -->
+    <div class="main-content">
+        <header>
+            <!-- Logo and text -->
+            <h2><b>Welcome to libby</b></h2>
+        </header>
+        
+        <!-- Main article section -->
+        <h2 style="text-align: center;">Here is your library, this is where you can add your own list of books</h2>
+
+        <!-- book adding button-->
+        <button id="newBookBtn">New Book</button>
+
+        <!-- Form to add new book -->
+        <div id="formContainer" class="hidden">
+            <form id="bookForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required>
+                    
+                <label for="pages">Pages:</label>
+                <input type="number" id="pages" name="pages" required>
+
+                <label for="isRead">Read:</label>
+                <input type="checkbox" id="isRead" name="isRead">
+
+                <button type="submit">Add Book</button>
+            </form>
+        </div>
+
+        <!-- Gallery Section: First Row of Images -->
+        <div id="BooksGrid" class="gallery-container">
+            <!-- Books will be displayed here -->
+        </div>
+
+        <footer>
+            <p>Made by Salteddawgg</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
