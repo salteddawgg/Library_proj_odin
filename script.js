@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('formContainer').classList.add('hidden');
+});
+
 const myLibrary = [];
 
 function Book(title, author, pages, isRead) {

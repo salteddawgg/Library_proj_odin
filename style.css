@@ -5,32 +5,34 @@
 
 body {
     background-color: #f0eef1;
-    color: black;
-    font-family: "Poppins", sans-serif;
-    font-size: 0.7rem;
-    font-weight: 500;
-    word-wrap: break-word;
-    /* footer support */
-    margin-bottom: 100px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 500;
+  word-wrap: break-word;
+  /* footer support */
+  margin-bottom: 100px;
 }
 
 /* Sidebar style */
 
 /* Main content */
 .main-content {
+
     padding: 20px;
     flex: 1;
 }
 
 /* Header with logo */
 header {
-    background-color: #fffbfb; 
-    border-radius: 10px; /* Rounded corners */
+    background-color:#fffbfb; 
+    border-radius: 10px 10px 10px 10px; /* Rounded corners */
     text-align: center;
-    padding: 20px 10px; /* Padding for space around the logo */
+    padding: 20px 10px; /* Padding for space around the logo (logo scrapped) */
     color: #050505;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
+
 }
 
 header img {
@@ -44,6 +46,7 @@ header h2 {
     font-size: 7rem;
 }
 
+
 .gallery {
     background-color: #fffbfb;
     margin: 10px; /* Add margin for spacing between gallery items */
@@ -56,11 +59,15 @@ header h2 {
     object-fit: cover; /* Ensures images cover the area and keep aspect ratio */
 }
 
+
+
 .gallery:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
     transform: scale(1.08); /* Slightly enlarge on hover */
     transition: transform 0.3s; /* Smooth transition */
 }
+
+
 
 /* Footer */
 footer {
@@ -74,14 +81,14 @@ footer {
 }
 
 .hidden {
-    display: none;
+    display:none;
 }
-
+    
 #formContainer {
-    display: flex;
+    display:flex;
     flex-direction: column;
     position: fixed;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fffbfb; /* Light background color */
@@ -99,16 +106,73 @@ footer {
 
 #bookForm label,
 #bookForm input {
-    margin-bottom: 10px;
-}
+    margin-bottom: 10px;}
 
-#bookForm button {
-    align-self: flex-end;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    border: none;
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer;
-}
+    #bookForm button {
+        align-self: flex-end;
+        padding: 10px 20px;
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text */
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition */
+    }
+    
+    #bookForm button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
 
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Space between book cards */
+        justify-content: center; /* Center the book cards */
+        padding: 20px;
+    }
+    
+    .book-card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        width: 200px; /* Fixed width for book cards */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .book-card:hover {
+        transform: translateY(-10px); /* Lift the card on hover */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    }
+    
+    .book-card p {
+        margin: 10px 0;
+    }
+
+    .book-card button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .book-card .btn-light-green {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .book-card .btn-light-red {
+        background-color: #f44336;
+        color: white;
+    }
+    
+    .book-card button:hover {
+        opacity: 0.8;
+    }
