@@ -80,7 +80,7 @@ document.getElementById('newBookBtn').addEventListener('click', function() {
     document.getElementById('formContainer').classList.remove('hidden');
 });
 
-// Example usage:
+// list fluff:
 addBookToLibrary('The Hobbit', 'J.R.R. Tolkien', 310, true);
 addBookToLibrary('1984', 'George Orwell', 328, false);
 displayBooks();

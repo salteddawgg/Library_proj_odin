@@ -28,7 +28,7 @@ header {
     background-color:#fffbfb; 
     border-radius: 10px 10px 10px 10px; /* Rounded corners */
     text-align: center;
-    padding: 20px 10px; /* Padding for space around the logo (logo scrapped) */
+    padding: 20px 10px; /* Padding for space around the logo (logo scrapped for now) */
     color: #050505;
     margin-bottom: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -62,9 +62,9 @@ header h2 {
 
 
 .gallery:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    transform: scale(1.08); /* Slightly enlarge on hover */
-    transition: transform 0.3s; /* Smooth transition */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transform: scale(1.08); 
+    transition: transform 0.3s; 
 }
 
 
@@ -91,12 +91,12 @@ footer {
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fffbfb; /* Light background color */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #fffbfb; 
+    border-radius: 10px; 
     padding: 20px;
     border: 1px solid black;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    z-index: 1000; /* Ensure the form is above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
 }
 
 #bookForm {
@@ -111,12 +111,12 @@ footer {
     #bookForm button {
         align-self: flex-end;
         padding: 10px 20px;
-        background-color: #4CAF50; /* Green background */
-        color: white; /* White text */
+        background-color: #4CAF50; 
+        color: white; 
         border: none;
-        border-radius: 5px; /* Rounded corners */
+        border-radius: 5px; 
         cursor: pointer;
-        transition: background-color 0.3s; /* Smooth transition */
+        transition: background-color 0.3s; 
     }
     
     #bookForm button:hover {
@@ -126,8 +126,8 @@ footer {
     .gallery-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Space between book cards */
-        justify-content: center; /* Center the book cards */
+        gap: 20px; /* Space between book cards, may need to increas */
+        justify-content: center; 
         padding: 20px;
     }
     
