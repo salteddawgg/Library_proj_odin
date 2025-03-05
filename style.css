@@ -80,8 +80,10 @@ footer {
     left: 0;
 }
 
-.hidden {
-    display:none;
+.formumHide {
+    opacity: 0;
+    pointer-events: none;
+
 }
     
 #formContainer {

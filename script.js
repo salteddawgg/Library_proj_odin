@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('formContainer').classList.add('hidden');
+    document.getElementById('formContainer').classList.add('formumHide');
 });
 
 const myLibrary = [];
@@ -72,12 +72,12 @@ document.getElementById('bookForm').addEventListener('submit', function(event) {
     const pages = document.getElementById('pages').value;
     const isRead = document.getElementById('isRead').checked;
     addBookToLibrary(title, author, pages, isRead);
-    document.getElementById('formContainer').classList.add('hidden');
+    document.getElementById('formContainer').classList.add('formumHide');
 });
 
 // Show form when "New Book" button is clicked
 document.getElementById('newBookBtn').addEventListener('click', function() {
-    document.getElementById('formContainer').classList.remove('hidden');
+    document.getElementById('formContainer').classList.remove('formumHide');
 });
 
 // list fluff:
